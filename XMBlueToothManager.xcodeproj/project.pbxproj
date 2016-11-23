@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DE697FCD27AB18F6B2AF92F /* libPods-XMBlueToothManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B40F195DDDF8E2BD139417 /* libPods-XMBlueToothManager.a */; };
+		36F49AAB1DE54A5C00771184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F49AAA1DE54A5C00771184 /* AppDelegate.swift */; };
+		36F49AB01DE54A5C00771184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F49AAE1DE54A5C00771184 /* Main.storyboard */; };
+		36F49AB21DE54A5C00771184 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36F49AB11DE54A5C00771184 /* Assets.xcassets */; };
+		36F49AB51DE54A5C00771184 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36F49AB31DE54A5C00771184 /* LaunchScreen.storyboard */; };
+		36F49AC01DE54A5C00771184 /* XMBlueToothManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F49ABF1DE54A5C00771184 /* XMBlueToothManagerTests.swift */; };
+		36F49ACB1DE54A5C00771184 /* XMBlueToothManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F49ACA1DE54A5C00771184 /* XMBlueToothManagerUITests.swift */; };
+		36F49ADC1DE54B7600771184 /* XMBlueToothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F49ADB1DE54B7600771184 /* XMBlueToothManager.m */; };
+		36F49ADF1DE5663800771184 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F49ADD1DE5663800771184 /* PeripheralViewController.swift */; };
+		36F49AE01DE5663800771184 /* CharacteristicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F49ADE1DE5663800771184 /* CharacteristicViewController.swift */; };
+		36F49AE21DE5664900771184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F49AE11DE5664900771184 /* ViewController.swift */; };
+		36F49AE41DE5682E00771184 /* XMPeripheralInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F49AE31DE5682E00771184 /* XMPeripheralInfo.swift */; };
+		36F49AE61DE5685D00771184 /* GlobalHeadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F49AE51DE5685D00771184 /* GlobalHeadFile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36F49ABC1DE54A5C00771184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F49A9F1DE54A5C00771184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36F49AA61DE54A5C00771184;
+			remoteInfo = XMBlueToothManager;
+		};
+		36F49AC71DE54A5C00771184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36F49A9F1DE54A5C00771184 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36F49AA61DE54A5C00771184;
+			remoteInfo = XMBlueToothManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27FF952FFB2719FB270EAB13 /* Pods-XMBlueToothManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMBlueToothManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMBlueToothManager/Pods-XMBlueToothManager.release.xcconfig"; sourceTree = "<group>"; };
+		36F49AA71DE54A5C00771184 /* XMBlueToothManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMBlueToothManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F49AAA1DE54A5C00771184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36F49AAF1DE54A5C00771184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36F49AB11DE54A5C00771184 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36F49AB41DE54A5C00771184 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36F49AB61DE54A5C00771184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F49ABB1DE54A5C00771184 /* XMBlueToothManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMBlueToothManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F49ABF1DE54A5C00771184 /* XMBlueToothManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMBlueToothManagerTests.swift; sourceTree = "<group>"; };
+		36F49AC11DE54A5C00771184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F49AC61DE54A5C00771184 /* XMBlueToothManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMBlueToothManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F49ACA1DE54A5C00771184 /* XMBlueToothManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMBlueToothManagerUITests.swift; sourceTree = "<group>"; };
+		36F49ACC1DE54A5C00771184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36F49AD91DE54B7500771184 /* XMBlueToothManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XMBlueToothManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		36F49ADA1DE54B7600771184 /* XMBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMBlueToothManager.h; sourceTree = "<group>"; };
+		36F49ADB1DE54B7600771184 /* XMBlueToothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMBlueToothManager.m; sourceTree = "<group>"; };
+		36F49ADD1DE5663800771184 /* PeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
+		36F49ADE1DE5663800771184 /* CharacteristicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicViewController.swift; sourceTree = "<group>"; };
+		36F49AE11DE5664900771184 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36F49AE31DE5682E00771184 /* XMPeripheralInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPeripheralInfo.swift; sourceTree = "<group>"; };
+		36F49AE51DE5685D00771184 /* GlobalHeadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalHeadFile.swift; sourceTree = "<group>"; };
+		38B40F195DDDF8E2BD139417 /* libPods-XMBlueToothManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XMBlueToothManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42C2812C2EE4B8444DE7454 /* Pods-XMBlueToothManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMBlueToothManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMBlueToothManager/Pods-XMBlueToothManager.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36F49AA41DE54A5C00771184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DE697FCD27AB18F6B2AF92F /* libPods-XMBlueToothManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F49AB81DE54A5C00771184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F49AC31DE54A5C00771184 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36F49A9E1DE54A5C00771184 = {
+			isa = PBXGroup;
+			children = (
+				36F49AA91DE54A5C00771184 /* XMBlueToothManager */,
+				36F49ABE1DE54A5C00771184 /* XMBlueToothManagerTests */,
+				36F49AC91DE54A5C00771184 /* XMBlueToothManagerUITests */,
+				36F49AA81DE54A5C00771184 /* Products */,
+				95FCA2C16618DB0E5B1999D1 /* Pods */,
+				E90667A11CC773F84EE54D8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36F49AA81DE54A5C00771184 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36F49AA71DE54A5C00771184 /* XMBlueToothManager.app */,
+				36F49ABB1DE54A5C00771184 /* XMBlueToothManagerTests.xctest */,
+				36F49AC61DE54A5C00771184 /* XMBlueToothManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36F49AA91DE54A5C00771184 /* XMBlueToothManager */ = {
+			isa = PBXGroup;
+			children = (
+				36F49AD81DE54A6E00771184 /* Class */,
+				36F49AAA1DE54A5C00771184 /* AppDelegate.swift */,
+				36F49AE11DE5664900771184 /* ViewController.swift */,
+				36F49ADD1DE5663800771184 /* PeripheralViewController.swift */,
+				36F49ADE1DE5663800771184 /* CharacteristicViewController.swift */,
+				36F49AE31DE5682E00771184 /* XMPeripheralInfo.swift */,
+				36F49AE51DE5685D00771184 /* GlobalHeadFile.swift */,
+				36F49AAE1DE54A5C00771184 /* Main.storyboard */,
+				36F49AB11DE54A5C00771184 /* Assets.xcassets */,
+				36F49AB31DE54A5C00771184 /* LaunchScreen.storyboard */,
+				36F49AB61DE54A5C00771184 /* Info.plist */,
+			);
+			path = XMBlueToothManager;
+			sourceTree = "<group>";
+		};
+		36F49ABE1DE54A5C00771184 /* XMBlueToothManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				36F49ABF1DE54A5C00771184 /* XMBlueToothManagerTests.swift */,
+				36F49AC11DE54A5C00771184 /* Info.plist */,
+			);
+			path = XMBlueToothManagerTests;
+			sourceTree = "<group>";
+		};
+		36F49AC91DE54A5C00771184 /* XMBlueToothManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36F49ACA1DE54A5C00771184 /* XMBlueToothManagerUITests.swift */,
+				36F49ACC1DE54A5C00771184 /* Info.plist */,
+			);
+			path = XMBlueToothManagerUITests;
+			sourceTree = "<group>";
+		};
+		36F49AD81DE54A6E00771184 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				36F49ADA1DE54B7600771184 /* XMBlueToothManager.h */,
+				36F49ADB1DE54B7600771184 /* XMBlueToothManager.m */,
+				36F49AD91DE54B7500771184 /* XMBlueToothManager-Bridging-Header.h */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		95FCA2C16618DB0E5B1999D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D42C2812C2EE4B8444DE7454 /* Pods-XMBlueToothManager.debug.xcconfig */,
+				27FF952FFB2719FB270EAB13 /* Pods-XMBlueToothManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E90667A11CC773F84EE54D8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38B40F195DDDF8E2BD139417 /* libPods-XMBlueToothManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36F49AA61DE54A5C00771184 /* XMBlueToothManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36F49ACF1DE54A5C00771184 /* Build configuration list for PBXNativeTarget "XMBlueToothManager" */;
+			buildPhases = (
+				F79011B656ED44F144A1EBD6 /* [CP] Check Pods Manifest.lock */,
+				36F49AA31DE54A5C00771184 /* Sources */,
+				36F49AA41DE54A5C00771184 /* Frameworks */,
+				36F49AA51DE54A5C00771184 /* Resources */,
+				601A3FBA2FBEB4BFCE9C2D5C /* [CP] Embed Pods Frameworks */,
+				F7C69104DE2A4C22ABA686A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMBlueToothManager;
+			productName = XMBlueToothManager;
+			productReference = 36F49AA71DE54A5C00771184 /* XMBlueToothManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36F49ABA1DE54A5C00771184 /* XMBlueToothManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36F49AD21DE54A5C00771184 /* Build configuration list for PBXNativeTarget "XMBlueToothManagerTests" */;
+			buildPhases = (
+				36F49AB71DE54A5C00771184 /* Sources */,
+				36F49AB81DE54A5C00771184 /* Frameworks */,
+				36F49AB91DE54A5C00771184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36F49ABD1DE54A5C00771184 /* PBXTargetDependency */,
+			);
+			name = XMBlueToothManagerTests;
+			productName = XMBlueToothManagerTests;
+			productReference = 36F49ABB1DE54A5C00771184 /* XMBlueToothManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36F49AC51DE54A5C00771184 /* XMBlueToothManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36F49AD51DE54A5C00771184 /* Build configuration list for PBXNativeTarget "XMBlueToothManagerUITests" */;
+			buildPhases = (
+				36F49AC21DE54A5C00771184 /* Sources */,
+				36F49AC31DE54A5C00771184 /* Frameworks */,
+				36F49AC41DE54A5C00771184 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36F49AC81DE54A5C00771184 /* PBXTargetDependency */,
+			);
+			name = XMBlueToothManagerUITests;
+			productName = XMBlueToothManagerUITests;
+			productReference = 36F49AC61DE54A5C00771184 /* XMBlueToothManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36F49A9F1DE54A5C00771184 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = wangxumin;
+				TargetAttributes = {
+					36F49AA61DE54A5C00771184 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = T6E43D9JDV;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					36F49ABA1DE54A5C00771184 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = T6E43D9JDV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 36F49AA61DE54A5C00771184;
+					};
+					36F49AC51DE54A5C00771184 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = T6E43D9JDV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 36F49AA61DE54A5C00771184;
+					};
+				};
+			};
+			buildConfigurationList = 36F49AA21DE54A5C00771184 /* Build configuration list for PBXProject "XMBlueToothManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36F49A9E1DE54A5C00771184;
+			productRefGroup = 36F49AA81DE54A5C00771184 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36F49AA61DE54A5C00771184 /* XMBlueToothManager */,
+				36F49ABA1DE54A5C00771184 /* XMBlueToothManagerTests */,
+				36F49AC51DE54A5C00771184 /* XMBlueToothManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36F49AA51DE54A5C00771184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F49AB51DE54A5C00771184 /* LaunchScreen.storyboard in Resources */,
+				36F49AB21DE54A5C00771184 /* Assets.xcassets in Resources */,
+				36F49AB01DE54A5C00771184 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F49AB91DE54A5C00771184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F49AC41DE54A5C00771184 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		601A3FBA2FBEB4BFCE9C2D5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMBlueToothManager/Pods-XMBlueToothManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79011B656ED44F144A1EBD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C69104DE2A4C22ABA686A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMBlueToothManager/Pods-XMBlueToothManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36F49AA31DE54A5C00771184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F49AE41DE5682E00771184 /* XMPeripheralInfo.swift in Sources */,
+				36F49AE21DE5664900771184 /* ViewController.swift in Sources */,
+				36F49AE61DE5685D00771184 /* GlobalHeadFile.swift in Sources */,
+				36F49ADF1DE5663800771184 /* PeripheralViewController.swift in Sources */,
+				36F49ADC1DE54B7600771184 /* XMBlueToothManager.m in Sources */,
+				36F49AAB1DE54A5C00771184 /* AppDelegate.swift in Sources */,
+				36F49AE01DE5663800771184 /* CharacteristicViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F49AB71DE54A5C00771184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F49AC01DE54A5C00771184 /* XMBlueToothManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F49AC21DE54A5C00771184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36F49ACB1DE54A5C00771184 /* XMBlueToothManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36F49ABD1DE54A5C00771184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36F49AA61DE54A5C00771184 /* XMBlueToothManager */;
+			targetProxy = 36F49ABC1DE54A5C00771184 /* PBXContainerItemProxy */;
+		};
+		36F49AC81DE54A5C00771184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36F49AA61DE54A5C00771184 /* XMBlueToothManager */;
+			targetProxy = 36F49AC71DE54A5C00771184 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36F49AAE1DE54A5C00771184 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36F49AAF1DE54A5C00771184 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36F49AB31DE54A5C00771184 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36F49AB41DE54A5C00771184 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36F49ACD1DE54A5C00771184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36F49ACE1DE54A5C00771184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36F49AD01DE54A5C00771184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D42C2812C2EE4B8444DE7454 /* Pods-XMBlueToothManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = T6E43D9JDV;
+				INFOPLIST_FILE = XMBlueToothManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangxumin.XMBlueToothManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XMBlueToothManager/Class/XMBlueToothManager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		36F49AD11DE54A5C00771184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27FF952FFB2719FB270EAB13 /* Pods-XMBlueToothManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = T6E43D9JDV;
+				INFOPLIST_FILE = XMBlueToothManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangxumin.XMBlueToothManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XMBlueToothManager/Class/XMBlueToothManager-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		36F49AD31DE54A5C00771184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T6E43D9JDV;
+				INFOPLIST_FILE = XMBlueToothManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangxumin.XMBlueToothManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMBlueToothManager.app/XMBlueToothManager";
+			};
+			name = Debug;
+		};
+		36F49AD41DE54A5C00771184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T6E43D9JDV;
+				INFOPLIST_FILE = XMBlueToothManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangxumin.XMBlueToothManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMBlueToothManager.app/XMBlueToothManager";
+			};
+			name = Release;
+		};
+		36F49AD61DE54A5C00771184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T6E43D9JDV;
+				INFOPLIST_FILE = XMBlueToothManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangxumin.XMBlueToothManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XMBlueToothManager;
+			};
+			name = Debug;
+		};
+		36F49AD71DE54A5C00771184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T6E43D9JDV;
+				INFOPLIST_FILE = XMBlueToothManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangxumin.XMBlueToothManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XMBlueToothManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36F49AA21DE54A5C00771184 /* Build configuration list for PBXProject "XMBlueToothManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F49ACD1DE54A5C00771184 /* Debug */,
+				36F49ACE1DE54A5C00771184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36F49ACF1DE54A5C00771184 /* Build configuration list for PBXNativeTarget "XMBlueToothManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F49AD01DE54A5C00771184 /* Debug */,
+				36F49AD11DE54A5C00771184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36F49AD21DE54A5C00771184 /* Build configuration list for PBXNativeTarget "XMBlueToothManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F49AD31DE54A5C00771184 /* Debug */,
+				36F49AD41DE54A5C00771184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36F49AD51DE54A5C00771184 /* Build configuration list for PBXNativeTarget "XMBlueToothManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F49AD61DE54A5C00771184 /* Debug */,
+				36F49AD71DE54A5C00771184 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36F49A9F1DE54A5C00771184 /* Project object */;
+}
