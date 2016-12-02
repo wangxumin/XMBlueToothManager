@@ -9,7 +9,6 @@
 import UIKit
 import CoreBluetooth
 class PeripheralViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
     @IBOutlet weak var tableView: UITableView!
     var manager = XMBlueToothManager()
     var services = NSMutableArray()
@@ -34,6 +33,7 @@ class PeripheralViewController: UIViewController,UITableViewDelegate,UITableView
     func chuanzhi(currentPeripheral:CBPeripheral) -> Void {
         XMLog(message: currentPeripheral)
         self.currPeripher  = currentPeripheral
+        //连接外设
         self.manager.connectToPeripheral(withChannel: self.channel, peripheral: currentPeripheral)
         self.manager.xm_discoverServices { (peripheral, error) in
             for s:CBService in (peripheral?.services)! {
@@ -133,7 +133,6 @@ class PeripheralViewController: UIViewController,UITableViewDelegate,UITableView
         // Pass the selected object to the new view controller.
         let vc = segue.destination as! CharacteristicViewController
         let cell = sender as! UITableViewCell
-        
         let indexPath = self.tableView.indexPath(for: cell)
         vc.currPeripheral  = self.currPeripher
         let info = self.services.object(at: (indexPath?.section)!) as! XMPeripheralInfo

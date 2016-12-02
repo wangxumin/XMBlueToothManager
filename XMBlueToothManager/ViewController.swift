@@ -39,7 +39,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.insertTableView(peripheral: peripheral!, advertisementData: advertisementData! as NSDictionary)
         }
         self.manager.xm_setFilter { (peripheralName, advertisementData, RSSI) -> Bool in
-            if peripheralName != nil{
+            if peripheralName != nil{//设置过滤条件
               return true
             }else{
               return false

@@ -157,7 +157,7 @@ typedef void(^XMDidWriteValueForCharacteristicAtChannel)(CBCharacteristic *chara
 /**
  扫描多久之后停止扫描
  
- @param time 限制时间
+ @param time 限制时间(s)
  */
 - (void)beginToScanWithLimitTime:(int)time;
 

@@ -80,9 +80,11 @@ class CharacteristicViewController: UIViewController,UITableViewDelegate,UITable
                 }
             }
         }
+        //订阅状态发生改变
         self.mananger.xm_didUpdateNotificationStateForCharacteristic { (characteristic, error) in
             XMLog(message: (characteristic?.uuid,(characteristic?.isNotifying)! ? "on" : "off"))
         }
+        //实时读取外设的RSSI
         self.mananger.xm_didReadRSSI { (RSSI, error) in
             XMLog(message: ("setBlockOnDidReadRSSI:\(RSSI)"))
             let distance:CGFloat? = self.getDistanceWith(RSSI: RSSI!)
@@ -94,7 +96,9 @@ class CharacteristicViewController: UIViewController,UITableViewDelegate,UITable
         self.mananger.xm_blockOnDisconnect { (central, peripheral, error) in
             XMLog(message: "连接失败")
         }
+        //添加重连设备
         self.mananger.xm_addAutoReconnectPeripheral(self.currPeripheral)
+        //写出值成功的回调
         self.mananger.xm_didWriteValueForCharacteristic { (characteristic, error) in
             if error == nil{
                 SVProgressHUD.showInfo(withStatus: "写入成功啦")
